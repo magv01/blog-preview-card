@@ -59,20 +59,26 @@ h2 {
     font-weight: var(--font-weight-bold);
 }
 
-main a {
+a {
     text-decoration: none;
-}
-h2 a:visited{
     color: var(--font-heading-black);
 }
-h2 a:hover{
+
+a:visited,
+a:active {
+    color: var(--font-heading-black);
+}
+
+a:focus{
+    outline-color: var(--font-heading-black);
+    padding: var(--spacing-xs) 0;
+}
+
+a:hover{
     color: var(--background-yellow);
     cursor: pointer;
 }
 
-h2:focus{
-    background-color: var(--background-yellow);
-}
 
 .container {
     padding: var(--spacing-lg);
