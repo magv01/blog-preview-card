@@ -54,14 +54,24 @@ main p, h2{
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: var(--spacing-lg);
     font-weight: var(--font-weight-bold);
 }
 
-h2:hover{
+main a {
+    text-decoration: none;
+}
+h2 a:visited{
+    color: var(--font-heading-black);
+}
+h2 a:hover{
     color: var(--background-yellow);
     cursor: pointer;
+}
+
+h2:focus{
+    background-color: var(--background-yellow);
 }
 
 .container {
